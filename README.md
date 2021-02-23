@@ -1,4 +1,4 @@
-# Awesome Project Build with TypeORM
+# RESTful Web Api using Express, TypeScript, TypeORM, and JWT
 
 Steps to run this project:
 
