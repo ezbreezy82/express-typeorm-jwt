@@ -1,0 +1,30 @@
+{
+   "name": "jwt-express-typeorm",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "ts-node": "3.3.0",
+      "tslib": "^1.11.1",
+      "typescript": "^3.8.3"
+   },
+   "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.18.1",
+      "class-validator": "^0.12.1",
+      "cors": "^2.8.5",
+      "express": "^4.15.4",
+      "helmet": "^3.22.0",
+      "jsonwebtoken": "^8.5.1",
+      "mysql": "^2.14.1",
+      "reflect-metadata": "^0.1.10",
+      "ts-node-dev": "^1.0.0-pre.44",
+      "typeorm": "0.2.24"
+   },
+   "scripts": {
+      "tsc": "tsc",
+      "start": "set debug=* && ts-node-dev --respawn --transpileOnly ./src/index.ts --poll",
+      "prod": "tsc && node ./build/app.js",
+      "migration:run": "ts-node ./node_modules/typeorm/cli.js migration:run"
+   }
+}
